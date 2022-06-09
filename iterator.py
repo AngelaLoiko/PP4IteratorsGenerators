@@ -31,7 +31,6 @@ class IterListsToList:
         return self
     
     def __next__(self):
-# если закончился внутренний лист, перейти на следующий элемент внешнего лист
         if self.is_item and self.ind_item == self.len_item:
             self.is_item = False
             self.ind_item = 0
